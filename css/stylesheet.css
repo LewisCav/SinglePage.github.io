@@ -115,4 +115,9 @@ html, body
     {
        display: none;
     }  
+    
+    .separator
+    {
+        display: none;
+    }
 }
