@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body
+{
+    min-height: 90vh;
+}
+
+/* Nav CSS */
+.nav-link:hover
+{
+    color: black !important;
+}
+
+.nav-link:active
+{
+    filter: blur(1px);
+}
+
+/* Logo CSS */
+.diamondlogo:hover
+{
+    filter: invert(10%);
+    cursor: pointer;
+}
+
+.diamondlogo:active
+{
+    filter: blur(1px);
+    cursor: pointer;
+}
+
+/* Pages CSS */
+#homecontainer, #portcontainer, #blogcontainer, #aboutcontainer, #contactcontainer
+{
+    display: none;
+    min-height: 100vh;
+    margin-top: -3em;
+}
+
+/* Home CSS */
+#homecontainer
+{
+    display: block;
+    padding-top: 5em;
+    background-position-y: -100px;
+    overflow: hidden;
+}
+
+/* Portfolio CSS */
+#portcontainer ul
+{
+    list-style-type: none;
+}
+
+/* Portfolio Carousel Animation Change CSS */
+.carousel-fade .carousel-inner .carousel-item
+{
+    opacity: 0;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+}
+.carousel-fade .carousel-inner .active 
+{
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right 
+{
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right 
+{
+    opacity: 1;
+}
+.carousel-fade .carousel-control 
+{
+    z-index: 2;
+}
+/* Carousel Animation Change END */
+
+/* Blog CSS */
+#blogcontainer, #aboutcontainer, #contactcontainer
+{
+    padding-top: 5em;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-faded-white
+{
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+/* About Us CSS */
+#aboutcontainer img
+{
+    max-width: 150px;
+    max-height: 150px;
+}
+/* Mobile Edits CSS */
+@media only screen and (max-width: 991px) 
+{
+    .diamondlogo
+    {
+       display: none;
+    }  
+}
